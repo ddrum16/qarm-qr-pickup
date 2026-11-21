@@ -86,7 +86,4 @@ Most of the system worked as intended, but the final demonstration exposed two i
 
 ## Demo
 
-▶️ **[Watch the QArm Pick up an Item]
-
-https://github.com/user-attachments/assets/77f8cc72-fef1-4e22-8568-6cc1a24e382c
-**
+▶️ **[Watch the QArm Pick up an Item](https://youtube.com/shorts/yu3ImisCyhk?feature=share)**
