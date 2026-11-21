@@ -83,3 +83,11 @@ Most of the system worked as intended, but the final demonstration exposed two i
 ## Tools
 
 `Python` `bcrypt` `Autodesk Inventor` `PrusaSlicer` `Quanser QArm`
+
+## Demo
+
+▶️ **[Watch the QArm sort an order](
+
+https://github.com/user-attachments/assets/77f8cc72-fef1-4e22-8568-6cc1a24e382c
+
+)**
