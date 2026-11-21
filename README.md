@@ -22,7 +22,7 @@ A servo-driven gripper designed in Inventor and 3D printed with PrusaSlicer.
 - The gears spin freely on axles
 
 <p align="center">
-<img width="400" height="390" alt="IMG_3304" src="https://github.com/user-attachments/assets/a23a5b9e-3fdd-4c8c-989d-0d6749ad0a1f" />
+<img width="400" height="390" alt="IMG_3304" src="https://github.com/user-attachments/assets/1e4bbae7-5ae8-4419-b992-76aab3d7c65d" />
 </p>
 <p align="center"><i>Exploded view of the end-effector assembly</i></p>
 
