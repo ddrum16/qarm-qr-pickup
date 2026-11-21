@@ -21,6 +21,11 @@ A servo-driven gripper designed in Inventor and 3D printed with PrusaSlicer.
 - Gear ratios increase the torque delivered to the arms
 - The gears spin freely on axles
 
+<p align="center">
+<img width="400" height="390" alt="IMG_3304" src="https://github.com/user-attachments/assets/a23a5b9e-3fdd-4c8c-989d-0d6749ad0a1f" />
+</p>
+<p align="center"><i>Exploded view of the end-effector assembly</i></p>
+
 ## Software System
 
 - **User accounts:** users create a secure account and log in with authentication
