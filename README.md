@@ -3,8 +3,8 @@
 A team project to design a lightweight end-effector that packages items of different shapes and sizes, paired with a Python ordering system that runs the QArm automatically. The goal was to reduce the need for manual labour in warehouses.
 
 <p align="center">
-  <img src="images/final-design.png" width="380">
-  <img src="images/printed-model.png" width="380">
+<img width="713" height="577" alt="Screenshot (136)" src="https://github.com/user-attachments/assets/5da86000-d9bd-45f6-9678-9bec76dba0c4" />
+<img width="2986" height="2794" alt="IMG_3304" src="https://github.com/user-attachments/assets/851799a3-7316-4e11-8b32-d6fcec2ab5d2" />
 </p>
 <p align="center"><i>Final CAD model (Inventor) · 3D printed and mounted on the QArm</i></p>
 
@@ -38,14 +38,37 @@ A servo-driven gripper designed in Inventor and 3D printed with PrusaSlicer.
 
 **`authenticate()`** sends new users to sign-up, checks the entered password against the stored hash, and returns the user ID once the login is correct.
 
-```python
+Sign-up: password rules and hashing
+
+python
+# Reject usernames that already exist
+if userid in userids:
+    print("Error: That userid already exists.")
+
+# Check the password for uppercase, lowercase, digit, and symbol
+for ch in password:
+    if ch.isupper():
+        has_upper = True
+    elif ch.islower():
+        has_lower = True
+    elif ch.isdigit():
+        has_digit = True
+    elif ch in special_symbols:
+        has_symbol = True
+
+if len(password) < 6 or not (has_upper and has_lower and has_digit and has_symbol):
+    print("Error: Password must be at least 6 characters with upper, lower, digit, and symbol")
+
 # Hash the password before saving
 hashed_pw = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
 
-# Verify a login attempt against the stored hash
-bcrypt.checkpw(password.encode('utf-8'), user[1].encode('utf-8'))
-```
+Login: checking the password
 
+python
+# Compare the entered password against the stored hash
+if bcrypt.checkpw(password.encode('utf-8'), user[1].encode('utf-8')):
+    password_valid = True
+    
 ## Outcome
 
 Most of the system worked as intended, but the final demonstration exposed two issues: a formatted string that didn't transfer correctly in the VNC viewer (affecting order completion and the CSV output), and QArm calibration that was off by about a centimetre from our predefined pickup coordinates. The main takeaway was to test in less controlled environments and design for tolerance.
